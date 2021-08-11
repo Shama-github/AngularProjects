@@ -1,0 +1,8 @@
+<h4 style="color: red;">Are you sure want to delete the Employee with Id {{id}}</h4>
+
+<ul *ngIf="emp">
+    <li>{{emp.eid}}</li>
+    <li>{{emp.eName}}</li>
+    <li>{{emp.eSal}}</li>
+</ul>
+<button class="text-danger" type="button" (click)="onDelete()"> Delete</button>
